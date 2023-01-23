@@ -10,23 +10,13 @@ const User = function (nome, cognome, data) {
   this.name = nome;
   this.cognome = cognome;
   this.date = data;
-  this.showName = function () {
-    return this.name + " " + this.surname;
-  };
 };
 
 let currentUser = new User("Pippo", "Baudo", "12/05/1992, ");
 console.log("questo è l'utente nuovo", currentUser);
 
 button.addEventListener("click", function () {
-  nome.innerHTML = currentUser.name;
-  cognome.innerHTML = currentUser.cognome;
-  data.innerHTML = currentUser.date;
+  nome.innerHTML = inputName.value;
+  cognome.innerHTML = inputCognome.value;
+  data.innerHTML = inputData.value;
 });
-
-/* let currentUser = new User("Pippo", "Baudo", "12/05/1992");
-console.log(currentUser); */
-/* 
-button.addEventListener("click", function () {
-  nomeCognome.innerHTML = currentUser.name + currentUser.cognome;
-}); */
