@@ -20,6 +20,8 @@ console.log("questo è l'utente nuovo", currentUser);
 
 button.addEventListener("click", function () {
   nome.innerHTML = currentUser.name;
+  cognome.innerHTML = currentUser.cognome;
+  data.innerHTML = currentUser.date;
 });
 
 /* let currentUser = new User("Pippo", "Baudo", "12/05/1992");
