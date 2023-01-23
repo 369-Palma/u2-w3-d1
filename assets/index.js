@@ -5,7 +5,7 @@ let button = document.getElementById("button");
 let nome = document.getElementById("nome");
 let cognome = document.getElementById("cognome");
 let data = document.getElementById("data");
-let righetab = document.getElementById("righetab");
+
 const User = function (nome, cognome, data) {
   this.name = nome;
   this.cognome = cognome;
@@ -20,6 +20,6 @@ button.addEventListener("click", function () {
   );
 
   currentUser.id = nome.innerHTML = currentUser.name;
-  cognome.innerHTML = currentUser.cognomee;
+  cognome.innerHTML = currentUser.cognome;
   data.innerHTML = currentUser.date;
 });
